@@ -59,6 +59,7 @@ article {
     margin: var(--MARGIN-P);
     text-align: center;
     text-wrap: wrap;
+    color: rgb(99, 99, 99);
 }
 
 /* ||ARTICLE */
@@ -75,6 +76,7 @@ article {
     border-radius: 10px;
     border: 3px solid whitesmoke;
     box-sizing: border-box;
+    font-size: 15px;
     font-weight: bolder;
     padding: 10px 15px;
     text-align: center;
@@ -84,6 +86,7 @@ article {
 /* ||BUTTON */
 
     .article__button {
+        font-size: 15px;
         background-color: rgba(0, 0, 255, 0.755);
         border-radius: 10px;
         border: 3px solid whitesmoke;
@@ -98,7 +101,7 @@ article {
 
 .article__p {
     margin: 15px 20px;
-    color: gray;
+    color: rgb(99, 99, 99);
 }
 
 /* ||MEDIA QUERIES */
