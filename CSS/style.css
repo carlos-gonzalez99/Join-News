@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ||VARIABLES */
+
+:root {
+    /* FONTS */
+    --FS: 1em;
+    --FS-HEADINGS: 2.4em;
+
+    /* MARGINS */
+    --MARGIN-P: 30px 15vw; 
+
+    /* Box-shadow */
+    --BS: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* ||GENERAL STYLES */
+
+header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article {
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    box-shadow: var(--BS);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 80vw;
+    padding: 5px;
+    text-align: center;
+}
+
+/* ||HEADER */
+
+.header__img {
+    height: auto;
+    width: 10%;
+}
+
+.header__h1 {
+    font-size: var(--FS-HEADINGS);
+    text-align: center;
+}
+
+/* ||MAIN */
+
+.main__p {
+    margin: var(--MARGIN-P);
+    text-align: center;
+    text-wrap: wrap;
+}
+
+/* ||ARTICLE */
+
+.article__form {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    
+}
+
+.article__form_email {
+    background-color: rgb(248, 247, 247);
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
+    box-sizing: border-box;
+    font-weight: bolder;
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
+}
+
+/* ||BUTTON */
+
+    .article__button {
+        background-color: rgba(0, 0, 255, 0.755);
+        border-radius: 10px;
+        border: 3px solid whitesmoke;
+        box-sizing: border-box;
+        color: white;
+        font-weight: lighter;
+        margin: 5px;
+        padding: 10px 15px;
+        text-align: center;
+        width: 98.5%;
+    }
+
+.article__p {
+    margin: 15px 20px;
+    color: gray;
+}
+
+/* ||MEDIA QUERIES */
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    :root {
+        --FS : 0.9em;
+        --FS-HEADINGS: 1.5em;
+    }
+  }
+  
+  /* Tablets */
+  @media screen and (max-width: 768px) {
+    :root {
+        --FS : 1em;
+        --FS-HEADINGS: 1.8em;
+    }
+  }
+  
+  /* Laptops */
+  @media screen and (max-width: 1024px) {
+        :root {
+        --FS : 1.1em;
+        --FS-HEADINGS: 2.1em;
+    }
+  }
+  
+  /* Desktop */
+  @media screen and (min-width: 1025px) {
+    :root {
+        --FS : 1.2em;
+        --FS-HEADINGS: 2.4em;
+    }
+  }
